@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language:	Ratpoison configuration/commands file ( /etc/ratpoisonrc ~/.ratpoisonrc )
-" Maintainer:   Magnus Woldrich <trapd00r@trapd00r.se>
+" Maintainer:   Magnus Woldrich <m@japh.se>
 " URL:		http://github.com/trapd00r/vim-syntax-ratpoison
 " Last Change:	2010-09-22
 
