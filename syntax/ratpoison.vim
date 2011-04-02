@@ -1,8 +1,8 @@
 " Vim syntax file
 " Language:	Ratpoison configuration/commands file ( /etc/ratpoisonrc ~/.ratpoisonrc )
-" Maintainer:   Magnus Woldrich <m@japh.se>
+" Maintaner:	Magnus Woldrich <m@japh.se>
 " URL:		http://github.com/trapd00r/vim-syntax-ratpoison
-" Last Change:	2010-09-22
+" Last Change:	2011-04-02
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
@@ -87,6 +87,7 @@ syn match   ratpoisonKeySeqArg  "\<\([CMASH]\(-[CMASH]\)\{,4}-\)\=KP_\(Subtract\
 syn match   ratpoisonHookArg    "\<\(key\|switchwin\|switchframe\|switchgroup\|quit\|restart\)\>" contained
 
 syn match   ratpoisonNumberArg  "\<\d\+\>"	contained nextgroup=ratpoisonNumberArg skipwhite
+
 syn keyword ratpoisonSetArg	barborder	contained nextgroup=ratpoisonNumberArg
 syn keyword ratpoisonSetArg	bargravity	contained nextgroup=ratpoisonGravityArg
 syn keyword ratpoisonSetArg	barpadding	contained nextgroup=ratpoisonNumberArg
