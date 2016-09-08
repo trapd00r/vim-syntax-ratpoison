@@ -2,7 +2,7 @@
 " Language:	Ratpoison configuration/commands file ( /etc/ratpoisonrc ~/.ratpoisonrc )
 " Maintaner:	Magnus Woldrich <m@japh.se>
 " URL:		http://github.com/trapd00r/vim-syntax-ratpoison
-" Last Change:	2011-04-02
+" Last Change:	2016-09-08 10:03:58
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
@@ -96,6 +96,7 @@ syn keyword ratpoisonSetArg	border		contained nextgroup=ratpoisonNumberArg
 syn keyword ratpoisonSetArg	fgcolor
 syn keyword ratpoisonSetArg	fwcolor
 syn keyword ratpoisonSetArg	bwcolor
+syn keyword ratpoisonSetArg	gravity	contained nextgroup=ratpoisonGravityArg
 syn keyword ratpoisonSetArg	historysize
 syn keyword ratpoisonSetArg	historycompaction
 syn keyword ratpoisonSetArg	historyexpansion
@@ -103,6 +104,7 @@ syn keyword ratpoisonSetArg	topkmap
 syn keyword ratpoisonSetArg	barinpadding
 syn keyword ratpoisonSetArg	font
 syn keyword ratpoisonSetArg	framesels
+syn keyword ratpoisonSetArg	maxundos
 syn keyword ratpoisonSetArg	inputwidth	contained nextgroup=ratpoisonNumberArg
 syn keyword ratpoisonSetArg	maxsizegravity	contained nextgroup=ratpoisonGravityArg
 syn keyword ratpoisonSetArg	padding		contained nextgroup=ratpoisonNumberArg
