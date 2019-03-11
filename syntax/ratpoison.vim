@@ -4,11 +4,7 @@
 " URL:		http://github.com/trapd00r/vim-syntax-ratpoison
 " Last Change:	2019-03-11 08:53:50
 
-" For version 5.x: Clear all syntax items
-" For version 6.x: Quit when a syntax file was already loaded
-if version < 600
-  syntax clear
-elseif exists("b:current_syntax")
+if exists("b:current_syntax")
   finish
 endif
 
@@ -254,35 +250,21 @@ syn match   ratpoisonVoidCommand	"^\s*\zsversion\ze\s*$"
 syn match   ratpoisonVoidCommand	"^\s*\zsvsplit\ze\s*$"
 syn match   ratpoisonVoidCommand	"^\s*\zswindows\ze\s*$"
 
-" Define the default highlighting.
-" For version 5.7 and earlier: only when not done already
-" For version 5.8 and later: only when an item doesn't have highlighting yet
-if version >= 508 || !exists("did_ratpoison_syn_inits")
-  if version < 508
-    let did_ratpoison_syn_inits = 1
-    command -nargs=+ HiLink hi link <args>
-  else
-    command -nargs=+ HiLink hi def link <args>
-  endif
-
-  HiLink ratpoisonBooleanArg	Boolean
-  HiLink ratpoisonCommandArg	Keyword
-  HiLink ratpoisonComment	Comment
-  HiLink ratpoisonDefCommand	Identifier
-  HiLink ratpoisonFrameFmtArg	Special
-  HiLink ratpoisonGravityArg	Constant
-  HiLink ratpoisonKeySeqArg	Special
-  HiLink ratpoisonNumberArg	Number
-  HiLink ratpoisonSetArg	Keyword
-  HiLink ratpoisonStringCommand	Identifier
-  HiLink ratpoisonTodo		Todo
-  HiLink ratpoisonVoidCommand	Identifier
-  HiLink ratpoisonWinFmtArg	Special
-  HiLink ratpoisonWinNameArg	Constant
-  HiLink ratpoisonWinListArg	Constant
-
-  delcommand HiLink
-endif
+hi def link ratpoisonBooleanArg	Boolean
+hi def link ratpoisonCommandArg	Keyword
+hi def link ratpoisonComment	Comment
+hi def link ratpoisonDefCommand	Identifier
+hi def link ratpoisonFrameFmtArg	Special
+hi def link ratpoisonGravityArg	Constant
+hi def link ratpoisonKeySeqArg	Special
+hi def link ratpoisonNumberArg	Number
+hi def link ratpoisonSetArg	Keyword
+hi def link ratpoisonStringCommand	Identifier
+hi def link ratpoisonTodo		Todo
+hi def link ratpoisonVoidCommand	Identifier
+hi def link ratpoisonWinFmtArg	Special
+hi def link ratpoisonWinNameArg	Constant
+hi def link ratpoisonWinListArg	Constant
 
 let b:current_syntax = "ratpoison"
 
