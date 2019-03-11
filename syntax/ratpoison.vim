@@ -2,7 +2,7 @@
 " Language:	Ratpoison configuration/commands file ( /etc/ratpoisonrc ~/.ratpoisonrc )
 " Maintaner:	Magnus Woldrich <m@japh.se>
 " URL:		http://github.com/trapd00r/vim-syntax-ratpoison
-" Last Change:	2016-09-15 15:16:13
+" Last Change:	2019-03-11 08:53:50
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
