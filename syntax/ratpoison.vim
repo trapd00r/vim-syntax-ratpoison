@@ -3,6 +3,7 @@
 " Maintaner:	Magnus Woldrich <m@japh.se>
 " URL:		http://github.com/trapd00r/vim-syntax-ratpoison
 " Last Change:	2019-03-11 08:53:50
+" Previous Maintainer:	Doug Kearns <djkea2@gus.gscit.monash.edu.au>
 
 if exists("b:current_syntax")
   finish
