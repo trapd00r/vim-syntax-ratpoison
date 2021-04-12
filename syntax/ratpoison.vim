@@ -2,7 +2,7 @@
 " Language:	Ratpoison configuration/commands file ( /etc/ratpoisonrc ~/.ratpoisonrc )
 " Maintaner:	Magnus Woldrich <m@japh.se>
 " URL:		http://github.com/trapd00r/vim-syntax-ratpoison
-" Last Change:	2019-03-11 08:53:50
+" Last Change:	2021-04-12 13:46:04
 " Previous Maintainer:	Doug Kearns <djkea2@gus.gscit.monash.edu.au>
 
 if exists("b:current_syntax")
@@ -37,7 +37,7 @@ syn keyword ratpoisonCommandArg select set setenv sfdump shrink			contained
 syn keyword ratpoisonCommandArg source sselect startup_message time title	contained
 syn keyword ratpoisonCommandArg tmpwm unalias undefinekey undo unmanage		contained
 syn keyword ratpoisonCommandArg unsetenv verbexec version vsplit warp		contained
-syn keyword ratpoisonCommandArg windows framefmt				contained
+syn keyword ratpoisonCommandArg windows framefmt infofmt			contained
 
 syn match   ratpoisonGravityArg "\<\(n\|north\)\>"	contained
 syn match   ratpoisonGravityArg "\<\(nw\|northwest\)\>"	contained
@@ -100,6 +100,7 @@ syn keyword ratpoisonSetArg	gravity	contained nextgroup=ratpoisonGravityArg
 syn keyword ratpoisonSetArg	historysize
 syn keyword ratpoisonSetArg	historycompaction
 syn keyword ratpoisonSetArg	historyexpansion
+syn keyword ratpoisonSetArg	infofmt         contained nextgroup=ratpoisonWinFmtArg
 syn keyword ratpoisonSetArg	topkmap
 syn keyword ratpoisonSetArg	barinpadding
 syn keyword ratpoisonSetArg	font
@@ -120,6 +121,7 @@ syn keyword ratpoisonSetArg	winname		contained nextgroup=ratpoisonWinNameArg
 
 syn match   ratpoisonWinFmtArg  "%[nstacil]"			contained nextgroup=ratpoisonWinFmtArg skipwhite
 syn match   ratpoisonFrameFmtArg  "%[nstacil]"			contained nextgroup=ratpoisonWinFmtArg skipwhite
+syn match   ratpoisonInfoFmtArg  "%[nstacil]"			contained nextgroup=ratpoisonWinFmtArg skipwhite
 
 syn match   ratpoisonWinListArg "\<\(row\|column\)\>"		contained
 
@@ -257,6 +259,7 @@ hi def link ratpoisonComment	Comment
 hi def link ratpoisonDefCommand	Identifier
 hi def link ratpoisonFrameFmtArg	Special
 hi def link ratpoisonGravityArg	Constant
+hi def link ratpoisonInfoFmtArg    Special
 hi def link ratpoisonKeySeqArg	Special
 hi def link ratpoisonNumberArg	Number
 hi def link ratpoisonSetArg	Keyword
